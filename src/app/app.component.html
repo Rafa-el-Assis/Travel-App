@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+<script src= "https://www.gstatic.com/9.14.0/firebase-app.js"></script>
+<script src= "https://www.gstatic.com/9.14.0/firebase-database.js"></script>
+<script>
+// Your web app's Firebase configuration
+var firebaseConfig = {
+  apiKey: "AIzaSyBUtIUze9it_XEHIO4m0pUSJ5W7bAwrGcg",
+  authDomain: "travel-app-702f1.firebaseapp.com",
+  databaseURL: "https://travel-app-702f1-default-rtdb.firebaseio.com",
+  projectId: "travel-app-702f1",
+  storageBucket: "travel-app-702f1.appspot.com",
+  messagingSenderId: "181887099729",
+  appId: "1:181887099729:web:a2c270054bd1b7ad912970"
+};
+    firebase.initializeApp(firebaseConfig);
+</script>
+<!-- // Initialize Firebase -->
+    <div id="travel">
+        <div id='marca'>
+            <div id="logo"></div>
+            <div id="nomeprojeto">
+                <h1>TRAVELAPP</h1>
+                <h2>O jeito fácil e divertido de viajar!</h2>
+                
+            </div>
+        </div>
+        <div id='cadastro'>
+            <div id="robo">
+                
+            </div>
+            <div id="titulocadastro">
+                <h1>Criar sua conta</h1>
+                <h2>Já possui uma conta? <i id="destaque">Faça Login</i></h2>
+            </div>
+            <div id="caixalogin">
+                <form>
+                    <div id="inputs">                        
+                        <input type="text" id="cliente.nome" class="nome" name="cliente.nome" placeholder="Nome"/>
+                        <input type="text" id="cliente.sobrenome" class= "sobrenome" name="cliente.sobrenome" placeholder="Sobrenome"/>
+                        <input type="text" id="cliente.email" class= "email" name="cliente.email" placeholder="E-mail"/>
+                        <input type="text" id="cliente.senha" class= "senha" name="cliente.senha" placeholder="Senha"/>
+                    </div>
+                    <div id="botao">
+                        <button type="button">Cadastrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>         
+    </div>
+</body>
+</html>
